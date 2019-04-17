@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Movee</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="css/index.css">
+
+</head> 
+<body>
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container" style="width: 90%;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"><img src="img/moove-tv-logo-white.png"
+     srcset="img/moove-tv-logo-white@p5x.png 0.5x,
+              img/moove-tv-logo-white@2x.png 2x,
+             img/moove-tv-logo-white@3x.png 3x"
+     class=""></a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+               
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                 <li class=""><a href="#">HOME</a></li>
+                <li><a href="#">MOOVEPAY</a></li>
+                <li><a href="#">LIVETV</a></li>
+                <li><a href="#"><i class="fa fa-search"></i>  SEARCH</a></li>
+                <li><a href="#"><i class="fa fa-arrow-left"></i> RETURN</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style="width: 95%">
+    <div class="row">
+        
+        <div class="col-md-9">
+            <p style="font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: normal;"> <a href="#"> LiveTV </a> > <a href="#"> Skits </a> > </p>
+            <div class="row">
+        
+                     <div class="col-md-12">
+             <!-- Carousel Default -->
+  <section class="carousel-default" ">
+    <div id="carousel-default" class="carousel slide" data-ride="carousel">
+      
+      <div class="carousel-inner" role="listbox" style="width: 100%;">
+        
+      </div>
+     
+    </div>
+  </section>
+  <div class="controller1">
+    <img   src="img/Ellipse.png"
+     srcset="img/Ellipse@2x.png 2x,
+             img/Ellipse@3x.png 3x"
+     class="circle">
+      <img style="margin-left: 5%; " src="img/Vector.png"
+     srcset="img/Vector@2x.png 2x,
+             img/Vector@3x.png 3x"
+     class="love">
+    
+
+    <img style="margin-left: 15%" src="img/Rectangle-7.png"
+     srcset="img/Rectangle-7@2x.png 2x,
+             img/Rectangle-7@3x.png 3x"
+     class="slider-ad">
+  </div>
+  <!-- /end Carousel Default -->
+   <div class="controller"> 
+    <div class="owl-carousel owl-theme active">
+        <a data-target="#carousel-default" data-slide-to="0" class="thumb"><img class="item" src="https://via.placeholder.com/150/92c952"></a>
+    </div>
+</div>
+    
+                     </div>
+                 </div>
+        </div>
+
+        <div class="col-md-3">
+            
+        
+             <img class="right-ad" src="img/5c5b419a3cd5e_154948444220190206_IMG@2x.png"
+     srcset="img/5c5b419a3cd5e_154948444220190206_IMG@2x.png 2x,
+             img/5c5b419a3cd5e_154948444220190206_IMG@3x.png 3x"
+     class="add">
+        
+           
+
+        </div>
+
+    </div>
+    
+</div>
+
+<footer class="footer"></footer>
+</body>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript">
+
+ $( document ).ready(function() {
+       $.get( "https://jsonplaceholder.typicode.com/photos", function( data ) {
+
+ var x = ' <div  class="owl-carousel owl-theme">';
+  for (var i = 0; i <10; i++) {
+   $('.carousel-inner').append(' <div class="item'+(i == 0 ? ' active':'' )+'" ><img src="'+data[i]['url']+'" alt="'+data[i]['title']+'"></div>');
+   
+ x+='<a data-target="#carousel-default" data-slide-to="'+i+'" class="thumb"><img class="item" src="'+data[i]['thumbnailUrl']+'"></a>';
+   }
+   x+='</div>';
+   $('.controller').html(x);
+$(".owl-carousel").owlCarousel({
+    items: 5,
+    loop: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    rewind: true,
+    autoplay: true,
+    margin: 5,
+    nav: true,
+  });
+ 
+$(".owl-prev").addClass("btn btn-success");
+
+});
+ 
+});
+
+
+
+</script>
+</html>                            

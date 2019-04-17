@@ -1,0 +1,514 @@
+@import url("bootstrap.css");					/* Default Reset, Typography, Forms, Responsive Grid etc. */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+body {
+    font-family: "Monserrat",sans-serif;
+    background-color: #101032;
+ }
+
+ a,p {
+    color: white;
+ }
+
+ a:hover {
+    color: #0371C2;
+ }
+.navbar-default {
+    background-color: #0371C2;
+    border-color: #0371C2;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+
+color: white;
+}
+
+.navbar {
+    
+    min-height: 70px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+line-height: 30px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+
+background-color: #101032;
+
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #101032;
+}
+
+
+@media (min-width: 768px){
+.navbar-right {
+    float: right!important;
+    margin-right: -40px;
+}
+
+}
+
+
+
+.owl-carousel{
+  transform: rotate(90deg);
+  width: 500px; 
+  margin-top:75px;
+} 
+.item{
+  transform: rotate(-90deg);
+  pointer-events: auto;
+}
+.owl-carousel .owl-nav{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  top: calc(50% - 33px);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+div.owl-carousel .owl-nav .owl-prev, div.owl-carousel .owl-nav .owl-next{
+    font-size:36px;
+    top:unset;
+    bottom: 15px; 
+    color: white;
+    z-index: 100;
+}
+
+div.owl-carousel .owl-nav .owl-prev span , div.owl-carousel .owl-nav .owl-next span{
+    padding-bottom: 280%;
+    padding-top: 180%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+/* CSS used here will be applied after bootstrap.css */
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        display: block;
+        height: 610px;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        line-height: 1;
+
+    }
+ 
+#carousel{
+  position: relative;
+    top: 0;
+    left: 0;
+}
+
+.controller
+  {
+    position: absolute;
+    top: 30%;
+    left: 65%;
+  }
+
+  .controller1
+  {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+  }
+
+
+
+@media screen and (max-width: 479px) {
+    div.owl-carousel .owl-nav .owl-prev span , div.owl-carousel .owl-nav .owl-next span{
+    padding-bottom: 70%;
+    padding-top: 10%;
+    }
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        display: block;
+        height: 305px;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        line-height: 1;
+    }
+    .owl-carousel{
+     
+      width: 270px; 
+
+    } 
+    .owl-carousel .owl-item {
+            width: 9% !important;
+    }
+    .controller
+  {
+    position: absolute;
+    top: 12%;
+    left: 43%;
+    right: 0px;
+  }
+
+  .controller1
+  {
+    width: 90%;
+    position: absolute;
+    top: 85%;
+    left: 8%;
+  }
+.owl-carousel .owl-nav{
+  margin-top: 3%;
+}
+
+.right-ad{
+    margin-top: 5%;
+    width: 100%;
+}
+
+.owl-carousel .owl-nav{
+ 
+  top: calc(50% - 50%);
+
+}
+
+
+.circle {
+    width: 5%;
+}
+.love{
+    width: 5%;
+    margin-left: 1% !important;
+}
+
+.slider-ad {
+    margin-left: 5% !important;
+    width: 50%;
+}
+}
+
+ /*iPhone 5 & 5S in portrait*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) { 
+.navbar-toggle {
+    margin-right: 5px; 
+    margin-top: 28px;
+}
+.navbar-brand {
+     float: initial; 
+}
+.circle {
+    width: 5%;
+}
+.love{
+    width: 5%;
+    margin-left: 1% !important;
+}
+
+.slider-ad {
+    margin-left: 8% !important;
+    width: 50%;
+}
+
+.controller {
+    position: absolute;
+    top: 12%;
+    left: 36%;
+    right: 0px;
+}
+
+ }
+
+ /*iPhone 6, 7, & 8 in portrait*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+
+.controller {
+    position: absolute;
+    top: 12%;
+    left: 45%;
+    right: 0px;
+}
+
+.slider-ad {
+    margin-left: 12% !important;
+    width: 50%;
+}
+
+ }
+
+
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+   .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        display: block;
+        height: 330px;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        line-height: 1;
+    }
+  .right-ad{
+    margin-top: 5%;
+    width: 100%;
+}
+.owl-carousel{
+     
+      display: none !important; 
+
+    } 
+
+    .controller
+  {
+    position: absolute;
+    top: 30%;
+    left: 47%;
+    right: 0px;
+  }
+
+  .controller1
+  {
+    width: 80%;
+    position: absolute;
+    top: 80%;
+    left: 8%;
+  }
+  .circle {
+    width: 2%;
+}
+.love{
+    width: 2%;
+    margin-left: 1% !important;
+}
+
+.slider-ad {
+    margin-left: 8% !important;
+    width: 30%;
+}
+
+  
+}
+
+
+
+/* Landscape */
+
+  @media (min-width: 360px) and (max-width: 640px) and (orientation: landscape) { 
+
+
+ .controller
+  {
+   
+    left: 45%;
+    right: 0px;
+  }
+}
+
+
+/* Landscape */
+
+  @media (min-width: 320px) and (max-width: 568px) and (orientation: landscape) { 
+
+
+ .controller
+  {
+   
+    left: 38%;
+    right: 0px;
+  }
+
+   .controller1
+  {
+    width: 80%;
+    position: absolute;
+    top: 85%;
+    left: 6%;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    
+    padding-left: 0px;
+    padding-right: 0px;
+}
+  .right-ad{
+    margin-top: 5%;
+    width: 100%;
+}
+.controller1
+  {
+    
+    top: 85%;
+  }
+
+  .love {
+    margin-left: 2% !important;
+  }
+
+  .controller
+  {
+   
+    left: 50%;
+    right: 0px;
+  }
+
+  .slider-ad {
+    width: 45%;
+    margin-left: 6% !important;
+  }
+}
+
+
+
+@media  (min-width: 375px) and (max-width: 812px)  and (orientation: landscape){ 
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        display: block;
+        height: 330px;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        line-height: 1;
+    }
+  .right-ad{
+    margin-top: 5%;
+    width: 100%;
+}
+.owl-carousel{
+     
+      display: none !important; 
+
+    } 
+
+    .controller
+  {
+    position: absolute;
+    top: 30%;
+    left: 47%;
+    right: 0px;
+  }
+
+  .controller1
+  {
+    width: 80%;
+    position: absolute;
+    top: 75%;
+    left: 8%;
+  }
+  .circle {
+    width: 2%;
+}
+.love{
+    width: 2%;
+    margin-left: 1% !important;
+}
+
+.slider-ad {
+    margin-left: 8% !important;
+    width: 30%;
+}
+
+}
+
+
+
+@media  (min-width: 411px) and (max-width: 823px) and (orientation: landscape) { 
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        display: block;
+        height: 330px;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        line-height: 1;
+    }
+  .right-ad{
+    margin-top: 5%;
+    width: 100%;
+}
+.owl-carousel{
+     
+      display: none !important; 
+
+    } 
+
+    .controller
+  {
+    position: absolute;
+    top: 30%;
+    left: 47%;
+    right: 0px;
+  }
+
+  .controller1
+  {
+    width: 80%;
+    position: absolute;
+    top: 75%;
+    left: 8%;
+  }
+  .circle {
+    width: 2%;
+}
+.love{
+    width: 2%;
+    margin-left: 1% !important;
+}
+
+.slider-ad {
+    margin-left: 8% !important;
+    width: 30%;
+}
+
+}
+
+
+.owl-carousel .owl-nav{
+  z-index: 100;
+}
+.footer{
+margin-top: 2%;
+background-color: #0371C2;width: 100%;
+height: 52px;
+left: 0px;
+top: 870px;
+}
+
